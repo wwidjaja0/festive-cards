@@ -4,8 +4,7 @@ import {
 	Route,
 	RouterProvider,
 } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import CardPage from "./pages/CardPage";
+import ROUTES from "./routesConfig";
 
 /**
  * A base for a festive-card that I can send to anyone in the world.
@@ -19,24 +18,20 @@ import CardPage from "./pages/CardPage";
  * 6. A copyright/crediting section at the end.
  */
 
-const ROUTES = [
-	{ path: "/", element: <HomePage /> },
-	{ path: "/:id", element: <CardPage /> },
-];
-
 const router = createBrowserRouter(
 	createRoutesFromElements(
-		ROUTES.map((route) => (
-			<Route key={route.path} path={route.path} element={route.element} />
+		ROUTES.map(({ path, element }) => (
+			<Route key={path} path={path} element={element} />
 		))
 	)
 );
 
-function App() {
+const App = () => {
 	return (
 		<div>
 			<RouterProvider router={router} />
 		</div>
 	);
-}
+};
+
 export default App;

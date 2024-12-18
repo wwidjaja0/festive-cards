@@ -1,16 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+.dm-mono {
+	font-family: "DM Mono", monospace;
+}
+
+.dm-sans {
+	font-family: "DM Sans", sans-serif;
+}
+
+html,
+body {
+	margin: 0;
+	display: flex;
+	place-content: center;
+	place-items: center;
+	min-height: 100vh;
+	text-align: center;
+}
+
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	--primary-color: #57441c;
+	--secondary-color: #e69f54;
+	background: linear-gradient(
+		45deg,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+}
+
+.home-card {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	place-content: center;
+	width: 90%;
+	max-width: 50rem;
+	min-height: 80vh;
+	margin: 2vh auto;
+
+	text-shadow: 1px 1px 10px #000000;
 	line-height: 1.5;
 	font-weight: 400;
 
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
-	background-color: #242424;
 
-	font-synthesis: none;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	padding: 2vh 2vw;
+	box-sizing: border-box;
+}
+
+h1 {
+	font-weight: 500;
+}
+
+.home-card-image {
+	min-width: 200px;
+	max-width: 350px;
+	width: 30%;
+	padding: 5vh;
+}
+
+.socials {
+	padding: 2vh;
+}
+
+.no-drag {
+	-webkit-user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 
 a {
@@ -20,15 +79,6 @@ a {
 }
 a:hover {
 	color: #535bf2;
-}
-
-body {
-	margin: 0;
-	display: flex;
-	place-items: center;
-	place-content: center;
-	min-width: 320px;
-	min-height: 100vh;
 }
 
 h1 {
@@ -53,6 +103,22 @@ button:hover {
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (max-height: 700px) {
+	.home-card {
+		min-height: 90vh;
+		padding: 1vh 2vw;
+	}
+	h1 {
+		font-size: 5vw;
+	}
+	.home-card-image {
+		padding: 3vh;
+	}
+	button {
+		margin-top: 1vh;
+	}
 }
 
 @media (prefers-color-scheme: light) {
