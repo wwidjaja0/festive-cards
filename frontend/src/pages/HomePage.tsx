@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+
 import Snowfall from "react-snowfall";
+
 import { usePalette } from "color-thief-react";
 import chillPNG from "/chill-guy.png";
 
