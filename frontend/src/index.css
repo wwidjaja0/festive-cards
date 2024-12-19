@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 
-.dm-mono {
-	font-family: "DM Mono", monospace;
-}
-
-.dm-sans {
-	font-family: "DM Sans", sans-serif;
-}
-
 html,
 body {
 	margin: 0;
@@ -18,55 +10,62 @@ body {
 	text-align: center;
 }
 
-:root {
-	--primary-color: #57441c;
-	--secondary-color: #e69f54;
-	background: linear-gradient(
-		45deg,
-		var(--primary-color),
-		var(--secondary-color)
-	);
+h1 {
+	font-size: 5vh;
 }
 
-.home-card {
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #83c1ff;
+}
+
+:root {
+	background-color: #204037;
+}
+
+.dm-mono {
+	font-family: "DM Mono", monospace;
+}
+
+.dm-sans {
+	font-family: "DM Sans", sans-serif;
+}
+
+.card {
 	display: flex;
 	flex-direction: column;
 	place-items: center;
 	place-content: center;
+}
+
+.home-card {
 	width: 90%;
-	max-width: 50rem;
-	min-height: 80vh;
-	margin: 2vh auto;
+	max-width: 80rem;
+	margin: auto;
 
 	text-shadow: 1px 1px 10px #4d4d4d;
-	line-height: 1.5;
-	font-weight: 400;
-
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
 	background: rgba(0, 0, 0, 0.2);
-	border: 5px solid rgba(255, 255, 255, 1);
 	border-radius: 25px;
 
-	padding: 2vh 2vw;
+	padding: 1vh;
 	box-sizing: border-box;
-}
-
-h1 {
-	font-weight: 500;
-	font-size: 5vh;
-	line-height: 1.1;
 }
 
 .home-card-image {
 	min-width: 200px;
 	max-width: 350px;
-	width: 30%;
 	padding: 5vh;
 }
 
 .socials {
-	padding: 2vh;
+	padding-left: 2vh;
+	padding-right: 2vh;
 }
 
 .no-drag {
@@ -77,13 +76,13 @@ h1 {
 	-ms-user-select: none;
 }
 
-a {
-	font-weight: 500;
-	color: #646cff;
-	text-decoration: inherit;
-}
-a:hover {
-	color: #535bf2;
+@media (max-width: 900px) {
+	h1 {
+		font-size: 5vw;
+	}
+	.home-card-image {
+		padding: 3vh;
+	}
 }
 
 button {
@@ -103,22 +102,6 @@ button:hover {
 button:focus,
 button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (max-width: 900px) {
-	.home-card {
-		min-height: 90vh;
-		padding: 1vh 2vw;
-	}
-	h1 {
-		font-size: 5vw;
-	}
-	.home-card-image {
-		padding: 3vh;
-	}
-	button {
-		margin-top: 1vh;
-	}
 }
 
 @media (prefers-color-scheme: light) {
