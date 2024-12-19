@@ -24,7 +24,8 @@ a:hover {
 }
 
 :root {
-	background-color: #204037;
+	background-color: #4c7f70;
+	color: rgba(255, 255, 255, 0.87);
 }
 
 .dm-mono {
@@ -49,7 +50,6 @@ a:hover {
 
 	text-shadow: 1px 1px 10px #4d4d4d;
 	color-scheme: light dark;
-	color: rgba(255, 255, 255, 0.87);
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 25px;
 
