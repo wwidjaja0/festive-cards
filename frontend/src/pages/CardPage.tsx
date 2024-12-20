@@ -38,11 +38,14 @@ function CardPage() {
 		[baseColors[0], baseColors[1], baseColors[2]] // Base color to white
 	);
 
+	// Update CSS variable dynamically
 	useEffect(() => {
-		document.documentElement.style.setProperty(
-			"--background-color",
-			backgroundColor.get()
-		);
+		const unsubscribe = backgroundColor.onChange((latest) => {
+			document.documentElement.style.setProperty("--background-color", latest);
+		});
+
+		// Clean up the subscription
+		return () => unsubscribe();
 	}, [backgroundColor]);
 
 	return (
