@@ -1,23 +1,47 @@
-import { Link } from "react-router-dom";
+import { motion, Variants } from "motion/react";
+import React from "react";
 
-const Card = () => {
+interface CardProps {
+	title: string;
+	img: string;
+	text: string;
+}
+
+const CardVariants: Variants = {
+	offscreen: { x: -100, opacity: 0 },
+	onscreen: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 2,
+			delay: 0.2,
+			ease: "easeIn",
+			type: "spring",
+			stiffness: 260,
+			damping: 20,
+		},
+	},
+};
+
+const Card: React.FC<CardProps> = ({ title, img, text }) => {
 	return (
-		<div className="home-card">
-			<h1 className="dm-sans">
-				Hi! If you've managed to stumble upon this page, it means you're a
-				pretty chill guy.
-			</h1>
-			<img
-				className="home-card-image no-drag"
-				src="https://media.tenor.com/FetQ_KhWgd4AAAAM/chill-guy.gif"
-			/>
-			<p className="dm-mono">
-				made with love -{" "}
-				<Link to="https://www.wwidjaja.site/" target="blank">
-					wwidjaja0
-				</Link>
-			</p>
-		</div>
+		<motion.div
+			initial="offscreen"
+			whileInView="onscreen"
+			variants={CardVariants}
+			viewport={{ once: true, amount: 0.5 }}
+			className="personal-card"
+		>
+			<div className="card">
+				<h1 className="personal-card-title">{title}</h1>
+				<img
+					className="personal-card-image no-drag"
+					src={img}
+					alt="drive image"
+				/>
+			</div>
+			<p className="personal-card-text">{text}</p>
+		</motion.div>
 	);
 };
 

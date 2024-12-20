@@ -7,7 +7,16 @@ function HomePage() {
 	return (
 		<div>
 			<HomeCard />
-			{useSnow && <Snowfall snowflakeCount={30} />}
+			{useSnow && (
+				<Snowfall
+					style={{
+						position: "fixed",
+						width: "100vw",
+						height: "100vh",
+					}}
+					snowflakeCount={30}
+				/>
+			)}
 		</div>
 	);
 }

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Shadows+Into+Light&display=swap");
 
 html,
 body {
@@ -12,11 +12,18 @@ body {
 
 h1 {
 	font-size: 5vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+p {
+	padding-left: 3vw;
+	padding-right: 3vw;
 }
 
 a {
 	color: #ffffff;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 a:hover {
@@ -24,8 +31,14 @@ a:hover {
 }
 
 :root {
-	background-color: #4c7f70;
+	background-color: var(--background-color, #4c7f70);
 	color: rgba(255, 255, 255, 0.87);
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+}
+
+:root::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
 .dm-mono {
@@ -44,13 +57,13 @@ a:hover {
 }
 
 .home-card {
-	width: 90%;
+	width: 100%;
 	max-width: 80rem;
 	margin: auto;
 
 	text-shadow: 1px 1px 10px #4d4d4d;
 	color-scheme: light dark;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
 
 	padding: 1vh;
@@ -58,9 +71,98 @@ a:hover {
 }
 
 .home-card-image {
-	min-width: 200px;
-	max-width: 350px;
+	min-width: 10rem;
+	max-width: 20rem;
 	padding: 5vh;
+}
+
+.hero-section {
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 20rem 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.hero-buffer {
+	margin-bottom: 30vh 1vh;
+}
+
+.timeline {
+	position: fixed;
+	padding: 1vh;
+	margin: 1vh;
+	top: 0;
+
+	background-color: rgba(0, 0, 0, 0.2);
+	border: 1px solid #4d4d4d;
+	border-radius: 1rem;
+}
+
+.timeline-title {
+	font-size: 2vh;
+	font-family: "DM Sans";
+}
+
+.timeline-item {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+	place-content: center;
+	font-family: "DM Mono";
+	color: black;
+	transition: color 0.3s;
+}
+
+.timeline-item.active {
+	color: white; /* Highlight active timeline item */
+	font-weight: bold;
+}
+
+.personal-title {
+	font-size: 5vh;
+	font-family: "Shadows Into Light", cursive;
+}
+
+.personal-card {
+	width: 40%;
+	justify-self: center;
+	max-width: 80rem;
+	margin-top: 5rem;
+	margin-bottom: 5rem;
+
+	text-shadow: 1px 1px 10px #4d4d4d;
+	color-scheme: light dark;
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 25px;
+
+	padding: 2vh;
+	box-sizing: border-box;
+}
+
+.personal-card-title {
+	font-size: 4vh;
+	font-family: "DM Sans";
+	text-shadow: 1px 1px 20px #ffffff;
+}
+
+.personal-card-image {
+	padding: 2vh 3vh;
+}
+
+.personal-card-text {
+	font-size: 2vh;
+	font-family: "DM Mono";
+	text-align: left;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 1rem;
+	padding: 1rem;
+	line-height: 2rem;
+}
+
+.text-buffer {
+	margin: 50vh 1vh;
+	font-family: "DM Mono";
 }
 
 .socials {
@@ -82,6 +184,9 @@ a:hover {
 	}
 	.home-card-image {
 		padding: 3vh;
+	}
+	.personal-card {
+		width: 90%;
 	}
 }
 
