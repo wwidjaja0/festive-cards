@@ -78,7 +78,7 @@ const VictorKu01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=1PBEnDfu7qm4ICih-u3Ky3UEu2Z1f7l_D&sz=w350"
 					}
-					text={""}
+					text={"May I join your uwu tree pwetty pwease? 👉👈🥺"}
 				/>
 				<Card
 					title={"And while we're still here..."}
@@ -94,9 +94,7 @@ const VictorKu01 = () => {
 					img={
 						"https://cdn.iconscout.com/icon/free/png-256/free-amazon-logo-icon-download-in-svg-png-gif-file-formats--brand-social-media-card-pack-logos-icons-1583154.png?f=webp"
 					}
-					text={
-						"Happy Birthday, Merry Christmas, and Happy New Year! - Widjaja"
-					}
+					text={"Happy Birthday, Merry Christmas, and Happy New Year! haha :3"}
 				/>
 			</Timeline>
 		</div>
