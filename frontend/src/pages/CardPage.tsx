@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import VictorKuCards from "../cards/VKu01";
 import AngelaTsaiCards from "../cards/ATsai01";
 import KylieLauCards from "../cards/KLau01";
+import { useEffect } from "react";
 
 function CardPage() {
 	const { cardName } = useParams();
@@ -14,7 +15,7 @@ function CardPage() {
 
 	// Define color mapping for each cardName
 	const colors: Record<string, [string, string, string]> = {
-		default: ["#ffffff", "#000000", "#000000"],
+		default: ["#000000", "#000000", "#000000"],
 		vicky: ["#384B70", "#507687", "#B8001F"],
 		angela: ["#5CB338", "#FFC145", "#FB4141"],
 		pookie: ["#3C552D", "#CA7373", "#D7B26D"],
@@ -36,6 +37,13 @@ function CardPage() {
 		[0, 0.5, 1],
 		[baseColors[0], baseColors[1], baseColors[2]] // Base color to white
 	);
+
+	useEffect(() => {
+		document.documentElement.style.setProperty(
+			"--background-color",
+			backgroundColor.get()
+		);
+	}, [backgroundColor]);
 
 	return (
 		<motion.div

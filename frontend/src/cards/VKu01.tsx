@@ -43,10 +43,12 @@ const VictorKu01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=1IuVL_xnBJQEYXPnn69sgGuBQwLyJPrk3&sz=w400"
 					}
-					text={"WRITE NOTE HERE"}
+					text={
+						"(yes this is the gift I said I was going to give you but couldn't get to you in time because I'm a busy bee, but don't worry, there's more !! [keep scrolling 😋])"
+					}
 				/>
 				<Card
-					title={"BIRTHDAY PHOTO"}
+					title={""}
 					img={
 						"https://drive.google.com/thumbnail?id=1r_I3hFXop7V1uDUzjijvAWU0lNY5hX2n&sz=w400"
 					}
