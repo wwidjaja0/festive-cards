@@ -12,6 +12,9 @@ function CardPage() {
 	const useSnow = true;
 	const names = ["vicky", "angela", "pookie"];
 	const isValidCardName = names.includes(cardName || "");
+	if (!isValidCardName) {
+		document.documentElement.style.setProperty("--background-color", "#000000");
+	}
 
 	// Define color mapping for each cardName
 	const colors: Record<string, [string, string, string]> = {
