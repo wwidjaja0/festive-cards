@@ -8,7 +8,7 @@ const VictorKu01 = () => {
 	return (
 		<div>
 			<div className="hero-section">
-				<HeroText text={"To: Victor"} />
+				<HeroText text={"To: Victor Ku"} />
 			</div>
 			<motion.p
 				initial={{ opacity: 1 }}
@@ -48,7 +48,7 @@ const VictorKu01 = () => {
 					}
 				/>
 				<Card
-					title={""}
+					title={"Hotpot!!"}
 					img={
 						"https://drive.google.com/thumbnail?id=1r_I3hFXop7V1uDUzjijvAWU0lNY5hX2n&sz=w350"
 					}
@@ -61,6 +61,7 @@ const VictorKu01 = () => {
 					}
 					text={"WRITE NOTE HERE"}
 				/>
+				<BufferText text={"But wait! There's more..."} />
 				<Card
 					title={"ALSO MERRY CHRISTMAS WOOOOO 🎄🎄"}
 					img={

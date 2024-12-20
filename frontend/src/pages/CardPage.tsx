@@ -5,6 +5,7 @@ import { motion, useScroll, useSpring, useTransform } from "motion/react";
 import VictorKuCards from "../cards/VKu01";
 import AngelaTsaiCards from "../cards/ATsai01";
 import KylieLauCards from "../cards/KLau01";
+import Credits from "../components/Credits";
 import { useEffect } from "react";
 
 function CardPage() {
@@ -66,12 +67,7 @@ function CardPage() {
 						{cardName === "vicky" && <VictorKuCards />}
 						{cardName === "angela" && <AngelaTsaiCards />}
 						{cardName === "pookie" && <KylieLauCards />}
-						<p className="dm-mono" style={{ position: "fixed", bottom: 0 }}>
-							made with love -{" "}
-							<Link to="https://www.wwidjaja.site/" target="blank">
-								wwidjaja0
-							</Link>
-						</p>
+						<Credits fixed={true} />
 					</>
 				) : (
 					<motion.div

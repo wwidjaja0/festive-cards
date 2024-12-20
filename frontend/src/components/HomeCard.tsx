@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
+import Credits from "./Credits";
 
 const HomeCard = () => {
 	const generateRandomColor = () => {
@@ -25,12 +25,7 @@ const HomeCard = () => {
 				className="home-card-image no-drag"
 				src="https://media.tenor.com/FetQ_KhWgd4AAAAM/chill-guy.gif"
 			/>
-			<p className="dm-mono">
-				made with love -{" "}
-				<Link to="https://www.wwidjaja.site/" target="blank">
-					wwidjaja0
-				</Link>
-			</p>
+			<Credits fixed={false} />
 		</motion.div>
 	);
 };
