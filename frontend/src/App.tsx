@@ -5,6 +5,7 @@ import {
 	RouterProvider,
 } from "react-router-dom";
 import ROUTES from "./routesConfig";
+import { HelmetProvider } from "react-helmet-async";
 
 const router = createBrowserRouter(
 	createRoutesFromElements(
@@ -16,9 +17,9 @@ const router = createBrowserRouter(
 
 const App = () => {
 	return (
-		<div>
+		<HelmetProvider>
 			<RouterProvider router={router} />
-		</div>
+		</HelmetProvider>
 	);
 };
 

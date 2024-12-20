@@ -3,12 +3,19 @@ import Card from "../components/Card";
 import HeroText from "../components/HeroText";
 import Timeline from "../components/Timeline";
 import { motion } from "motion/react";
+import MetaTags from "../components/MetaTags";
 
 const KylieLau01 = () => {
 	return (
 		<div>
+			<MetaTags
+				title="To: Pookie"
+				description="Dear Forever Pookie..."
+				image="https://em-content.zobj.net/source/apple/81/christmas-tree_1f384.png"
+				name="wwidjaja0"
+			/>
 			<div className="hero-section">
-				<HeroText text={"To: my forever pookie ❤️"} />
+				<HeroText text={"To: My Forever Pookie"} />
 			</div>
 			<motion.p
 				initial={{ opacity: 1 }}
@@ -48,18 +55,22 @@ const KylieLau01 = () => {
 					}
 				/>
 				<Card
-					title={"Hotpot!!"}
+					title={"Parties & Hotpot!!"}
 					img={
 						"https://drive.google.com/thumbnail?id=1r_I3hFXop7V1uDUzjijvAWU0lNY5hX2n&sz=w350"
 					}
-					text={"WRITE NOTE HERE"}
+					text={
+						"These moments were the most fun I've had in a single quarter. Hope you had tons of fun and got to celebrate your 22nd birthday to the fullest. "
+					}
 				/>
 				<Card
-					title={"BIRTHDAY PHOTO"}
+					title={"On another note..."}
 					img={
 						"https://drive.google.com/thumbnail?id=1yKu5map-3lhKq0znWCZfiQ1XPXfGMOfW&sz=w350"
 					}
-					text={"WRITE NOTE HERE"}
+					text={
+						"I thought poker was going to be the only thing we did together this quarter, but I'm glad we did more than that. I'm looking forward to being able to make more memories with you the rest of this year (even if I may be more busy), but I'm sure we'll find time to hang out, and even if we may drift apart someday, I'm sure we'll both understand that that's life, and that's okay. 😌"
+					}
 				/>
 				<BufferText text={"But wait! There's more..."} />
 				<Card
@@ -67,21 +78,25 @@ const KylieLau01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=1PBEnDfu7qm4ICih-u3Ky3UEu2Z1f7l_D&sz=w350"
 					}
-					text={"WRITE NOTE HERE"}
+					text={""}
 				/>
 				<Card
-					title={"PHOTO"}
+					title={"And while we're still here..."}
 					img={
 						"https://drive.google.com/thumbnail?id=1rvG09ajoCNazSjO04btmzYztq9CDSVvZ&sz=w350"
 					}
-					text={"WRITE NOTE HERE"}
+					text={
+						"Let's not waste a second of our time in our early adulthood and make the most of it."
+					}
 				/>
 				<Card
-					title={"And finally, a gift for you..."}
+					title={"Finally, a gift for you..."}
 					img={
-						"https://drive.google.com/thumbnail?id=1IuVL_xnBJQEYXPnn69sgGuBQwLyJPrk3&sz=w350"
+						"https://cdn.iconscout.com/icon/free/png-256/free-amazon-logo-icon-download-in-svg-png-gif-file-formats--brand-social-media-card-pack-logos-icons-1583154.png?f=webp"
 					}
-					text={"WRITE NOTE HERE"}
+					text={
+						"Happy Birthday, Merry Christmas, and Happy New Year! - Widjaja"
+					}
 				/>
 			</Timeline>
 		</div>
