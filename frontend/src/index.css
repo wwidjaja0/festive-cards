@@ -31,7 +31,7 @@ a:hover {
 }
 
 :root {
-	background-color: var(--background-color, #4c7f70);
+	background-color: var(--background-color, #000000);
 	color: rgba(255, 255, 255, 0.87);
 	-ms-overflow-style: none; /* Internet Explorer 10+ */
 	scrollbar-width: none; /* Firefox */
@@ -127,6 +127,8 @@ a:hover {
 .personal-card {
 	width: 40%;
 	justify-self: center;
+	place-content: center;
+	align-items: center;
 	max-width: 80rem;
 	margin-top: 5rem;
 	margin-bottom: 5rem;
