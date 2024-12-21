@@ -10,7 +10,7 @@ import AngelaTsai01 from "../cards/ATsai01";
 import KylieLau01 from "../cards/KLau01";
 import LisaLiu01 from "../cards/LLiu01";
 import General01 from "../cards/General01";
-import Meme01 from "../cards/Meme01";
+// import Meme01 from "../cards/Meme01";
 
 function CardPage() {
 	const { cardName } = useParams();
