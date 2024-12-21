@@ -56,21 +56,27 @@ const LisaLiu01 = () => {
 					img={
 						"https://upload-os-bbs.hoyolab.com/upload/2021/12/26/73868637/727cac912f4c8cb20e406d8c43fc0e92_3553923933272662680.gif"
 					}
-					text={""}
+					text={
+						"wowowow check out this cool gif :3 also should I get back into genshin? I might touch it over the summer but not sure if I have time during the school year, I'm always down to play if ur on tho so lmk"
+					}
 				/>
 				<Card
 					title={"Deep Talks and Fun Moments"}
 					img={
 						"https://drive.google.com/thumbnail?id=1N4Tq-BtlXeHNexUdPJwt-vD8MTSItV_6&sz=w350"
 					}
-					text={""}
+					text={
+						"Thanksgiving Break was HEAVY, and hey, we would know 😂 but I'm so glad that I got to know more about you on a deeper level and spend all that time with you over the break :3 I definitely felt a lot less lonely over the break because of the time we spent and I hope you feel the same!"
+					}
 				/>
 				<Card
 					title={"Meeting all these cool people you know!"}
 					img={
 						"https://drive.google.com/thumbnail?id=1R4BshRhm11xrKqsVGXXPrSfT-YtTj4BN&sz=w350"
 					}
-					text={""}
+					text={
+						"Also really glad and thankful to meet all of your very very cool friends and I got to know them better and hang out with a lot of people because of you, so I'm very grateful for that! I got to have some of the most fun I've had in all my time here because you chose to pick me up, so for that I'm very grateful."
+					}
 				/>
 				<BufferText text={"But wait! There's more..."} />
 				<Card
@@ -78,7 +84,9 @@ const LisaLiu01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=1H8nsvAvBNQIZpNDvaUX7A4WrMsEWOoZY&sz=w350"
 					}
-					text={""}
+					text={
+						"WOOOOOOOOOOOOO can't believe it's the end of the year already! I'm really looking forward to the new year and all the new memories we'll make together. I'm sure we'll have a lot of fun and I'm looking forward to it! 😊"
+					}
 				/>
 				<Card
 					title={"And while we're still here"}
@@ -94,7 +102,9 @@ const LisaLiu01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=12cUl1MBkxwquB0ILoMfpDYFmnO9UwCQw&sz=w350"
 					}
-					text={""}
+					text={
+						"I'm really going to miss you and all the bytes when you guys graduate and eventually move away 😭😭😭"
+					}
 				/>
 				<Card
 					title={"me when I don't have gift for you"}
