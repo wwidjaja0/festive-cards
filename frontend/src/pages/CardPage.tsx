@@ -33,9 +33,9 @@ function CardPage() {
 	const colors: Record<string, [string, string, string]> = {
 		default: ["#000000", "#000000", "#000000"],
 		vicky: ["#384B70", "#507687", "#B8001F"],
-		angela: ["#5CB338", "#FFC145", "#FB4141"],
+		angela: ["#488c2b", "#9c762c", "#992323"],
 		pookie: ["#3C552D", "#CA7373", "#D7B26D"],
-		bryce: ["#384B70", "#507687", "#B8001F"],
+		bryce: ["#384B70", "#507687", "#1ca698"],
 		lisa: ["#5CB338", "#FFC145", "#FB4141"],
 		christmas: ["#3C552D", "#CA7373", "#D7B26D"],
 		christmass: ["#3C552D", "#CA7373", "#D7B26D"],

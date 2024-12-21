@@ -34,83 +34,103 @@ const AngelaTsai01 = () => {
 			</ReactAudioPlayer>
 			<Timeline>
 				<Card
-					title={"When we first met,"}
+					title={"When we first met..."}
 					img={
-						"https://drive.google.com/thumbnail?id=1QzlLMXI-ypKyQpLaDoz5LkZ98eFOdVLb&sz=w350"
+						"https://drive.google.com/thumbnail?id=1cG_49nY6vVmt1oL0P75uB0wYaeaqg5J1&sz=w350"
 					}
-					text={"I thought you were a chill guy."}
+					text={
+						"We played Mahjong and I thought you were pretty scary at first 😅 haha (I have no clue why) but I thought you were a very cool and hardworking person!"
+					}
 				/>
 				<BufferText text={"But then I realized..."} />
 				<Card
-					title={"...you're really just a chill guy."}
+					title={"...you're really just a chill gal!"}
 					img={
-						"https://drive.google.com/thumbnail?id=1zDpW2Mec35_gsHENvFEqOFfnINM3vLHu&sz=w350"
+						"https://drive.google.com/thumbnail?id=1Fh3xmYU0lBmDV98p7rnhxGkE68-j4f4u&sz=w350"
 					}
 					text={
-						"Who could have known that we would have so many hang outs this quarter and have such fun times together? I'm honestly so grateful that you invited me to as many things as you did and that we got to know each other better through ACM."
+						"Who could have known that we would have so many hang outs this quarter and have such fun times together? I'm honestly so grateful that you invited me to as many things as you did and that we got to know each other better through ACM :)"
 					}
 				/>
 				<BufferText text={"And to that I say:"} />
 				<Card
-					title={"🎉 Happy Belated Birthday, Victor 🎉"}
+					title={"Happy Belated Birthday, Angela 🎉"}
 					img={
-						"https://drive.google.com/thumbnail?id=1IuVL_xnBJQEYXPnn69sgGuBQwLyJPrk3&sz=w350"
+						"https://drive.google.com/thumbnail?id=1ZjXwaPM17m5kwqCKr4B4fRa3UYaDdlY1&sz=w350"
 					}
 					text={
 						"(yes this is the gift I said I was going to give you but couldn't get to you in time because I'm a busy bee, but don't worry, there's more !! [keep scrolling 😋])"
 					}
 				/>
 				<Card
-					title={"Parties & Hotpot!!"}
+					title={"Parties & Hangouts !!"}
 					img={
-						"https://drive.google.com/thumbnail?id=1r_I3hFXop7V1uDUzjijvAWU0lNY5hX2n&sz=w350"
+						"https://drive.google.com/thumbnail?id=15_0rGzCMpbJDKy-RoHeZ58jt2fUU4QU6&sz=w350"
 					}
 					text={
-						"These moments were the most fun I've had in a single quarter. Hope you had tons of fun and got to celebrate your 22nd birthday to the fullest. "
+						"These moments were the most fun I've had in a single quarter. Hope you also had tons of fun and got to celebrate your 21st birthday to the fullest :3"
 					}
 				/>
 				<Card
 					title={"On another note..."}
 					img={
-						"https://drive.google.com/thumbnail?id=1yKu5map-3lhKq0znWCZfiQ1XPXfGMOfW&sz=w350"
+						"https://drive.google.com/thumbnail?id=1nb0ddmrPp5YvYBMaFHrQ_gCoQCqy6FVz&sz=w350"
 					}
 					text={
-						"I thought poker was going to be the only thing we did together this quarter, but I'm glad we did more than that. I'm looking forward to being able to make more memories with you the rest of this year (even if I may be more busy), but I'm sure we'll find time to hang out, and even if we may drift apart someday, I'm sure we'll both understand that that's life, and that's okay. 😌"
+						"I thought mahjong was going to be the only thing we did together this quarter, but I'm glad we did more than that. I'm looking forward to being able to make more memories with you the rest of this year (even if we both may be more busy), but I'm sure we'll find time to hang out, and even if we may drift apart someday, I'm sure we'll both understand that that's life, and that's okay. 😌"
 					}
 				/>
 				<BufferText text={"But wait! There's more..."} />
 				<Card
 					title={"ALSO MERRY CHRISTMAS WOOOOO 🎄🎄"}
 					img={
-						"https://drive.google.com/thumbnail?id=1PBEnDfu7qm4ICih-u3Ky3UEu2Z1f7l_D&sz=w350"
-					}
-					text={"May I join your uwu tree pwetty pwease? 👉👈🥺"}
-				/>
-				<Card
-					title={"And while we're still here"}
-					img={
-						"https://drive.google.com/thumbnail?id=1rvG09ajoCNazSjO04btmzYztq9CDSVvZ&sz=w350"
+						"https://drive.google.com/thumbnail?id=1eJGjDJA3xdQk0kVvG8hpioNi3uhrjEf-&sz=w350"
 					}
 					text={
-						"let's not waste a second of our time in our early adulthood and make the most of the moments."
+						"Hope it was fun watching me after victor's party lol, only a few people have seen me like that my whole life, takes a lot of trust from me"
 					}
 				/>
-				<BufferText text={"goofy ahh photos alert 🤡"} />
+				<BufferText text={"stargazing! 🌌🌠"} />
 				<Card
-					title={"putting in the work"}
+					title={"Look!"}
 					img={
-						"https://drive.google.com/thumbnail?id=1G37EOnpBf25TGho8GDydv2oBvB0ANkcN&sz=w350"
+						"https://drive.google.com/thumbnail?id=1EsXjNeidz-ac8LIn8dOIcjA58cuPaZSv&sz=w350"
+					}
+					text={"What's over there :O"}
+				/>
+				<Card
+					title={"👀"}
+					img={
+						"https://drive.google.com/thumbnail?id=18kgNZBACTUMGfzFNZDiakLoIlMNQ-872&sz=w350"
+					}
+					text={"lol we all look so enamoured :3"}
+				/>
+				<Card
+					title={"hands down fav upperclassmen"}
+					img={
+						"https://drive.google.com/thumbnail?id=1zRSombtenY_vMW18cseF8oQiYxx-D1cF&sz=w350"
 					}
 					text={
-						"had to get down and dirty to get those really nice shots of you 😏"
+						"You're one of my favorite upperclassmen I've met at this school so far! And that's not just because you're one of the few I've met haha 😅"
 					}
 				/>
 				<Card
-					title={"???"}
+					title={"also HAPPY EARLY NEW YEAR 🎉"}
 					img={
-						"https://drive.google.com/thumbnail?id=1Gapjvsvrdws-1w8cIRPm_uCysNSlEzLG&sz=w350"
+						"https://drive.google.com/thumbnail?id=1xZlXZu6tuzzcFWPr_XttHRH1dtvwpWXe&sz=w350"
 					}
-					text={"wtf is going on in this photo lul"}
+					text={
+						"I'm gonna miss you and all the bytes when you guys graduate 😭😭😭"
+					}
+				/>
+				<Card
+					title={"new addiction alert 🚨"}
+					img={
+						"https://drive.google.com/thumbnail?id=1uitYbMF08VxoJJ2z4rgtCU5Opy1a_HGP&sz=w350"
+					}
+					text={
+						"Jokes on you, I'm also addicted to poker 😏. LOL, but I hope you had fun on your birthday, I'll say that I had a great time as it was my first time watching a meteor shower in my life and actually seeing anything! It was a fun experience that I'll never forget."
+					}
 				/>
 				<Card
 					title={"me when I don't have gift for you"}

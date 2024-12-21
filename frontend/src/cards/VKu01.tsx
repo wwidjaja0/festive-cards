@@ -123,7 +123,7 @@ const VictorKu01 = () => {
 						"https://cdn.iconscout.com/icon/free/png-256/free-amazon-logo-icon-download-in-svg-png-gif-file-formats--brand-social-media-card-pack-logos-icons-1583154.png?f=webp"
 					}
 					text={
-						"Happy Birthday, Merry Christmas, and Happy New Year! haha :3 (it should be sent to you very shortly, but if it hasn't yet let me know)"
+						"Happy Belated Birthday, Merry Christmas, and Happy New Year! haha :3 (it should be sent to you very shortly, but if it hasn't yet let me know)"
 					}
 				/>
 			</Timeline>

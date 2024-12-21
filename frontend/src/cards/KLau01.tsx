@@ -107,7 +107,7 @@ const KylieLau01 = () => {
 						"https://drive.google.com/thumbnail?id=16kDRjBuHf6lHVE4iAqSc1tJ9aXqE38OA&sz=w350"
 					}
 					text={
-						"Thank you for sticking by my side and wanting to experience and enjoy the same things that I do, and for being the bestest most caringest friend I could ever ask for to be by my side :3"
+						"Thank you for sticking by my side and wanting to experience and enjoy the same things that I do, and for being the bestest most caringest friend AND MORE IMPORTANTLY, GIRLFRIEND, I could ever ask for to be by my side :3"
 					}
 				/>
 				<Card
