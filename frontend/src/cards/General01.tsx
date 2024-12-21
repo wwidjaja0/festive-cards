@@ -2,10 +2,79 @@ import BufferText from "../components/BufferText";
 import Card from "../components/Card";
 import HeroText from "../components/HeroText";
 import Timeline from "../components/Timeline";
-import { motion } from "motion/react";
+import { motion, Variants } from "motion/react";
 import MetaTags from "../components/MetaTags";
 import ReactAudioPlayer from "react-audio-player";
 import Button from "../components/Button";
+import ImageGallery from "react-image-gallery";
+
+const CardVariants: Variants = {
+	offscreen: { x: -100, opacity: 0 },
+	onscreen: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 2,
+			delay: 0.2,
+			ease: "easeIn",
+			type: "spring",
+			stiffness: 260,
+			damping: 20,
+		},
+	},
+};
+
+const baseUrl = "https://drive.google.com/thumbnail";
+const ids = [
+	"1tZqINV907c0uPHzGeM290-6luL0RWBUZ",
+	"1aYmsstFe7n3MFYAEPdadflsGc1okKLhH",
+	"135O6RAVuZs716coT_EqaYZ9UnsBbCsJe",
+	"1rGauG-9lh6QyfI_P5iIig7fXl-Gh4RMe",
+	"1AcaGqNp7uar_4JMOxutKTH2UdaZpFTKj",
+	"1GV2mqh-D0aXRlLoZXHAPUHzRkhcWlTxo",
+	"1v1A1G-WvpAvYo_maB9PNKaamQb9M62zv",
+	"1zRKlohjYMs7fhxHOiUx2gwDlBD3Uv55N",
+	"1jVqu6wy3gL24e4rrMAMdN982Yh4HA2eW",
+	"1jMotc3ArvyUKup2WTas1HqaMtII6WAYB",
+	"1lLlDMzDhaJNCCYUpUwNPUZykJUFKsD4S",
+	"1BwzS0n2C01hVm31_1nbErZ-QMkH0yQm0",
+	"1NsSkGkNbd4cHnWXSGjJN4s56d0e_9rv-",
+	"1i7-ZvgnkyCsFp0m28hv4aKhvhDPkOpX-",
+	"1OyQbFQGI1jqcWAnuFGR1cADpPZ4TQThB",
+	"1xixq4SVI1f28dZq9LQxA0K4ci7n_Vwez",
+	"1IcxRDHE7in8I4eZmPnYYWP3pdgZsIpfu",
+	"1tyRafQ8ZctMuTfQd_3XNArnG2_ouA29L",
+	"1GRwT_PrJbHStUsiHN-SJZXqZyFOdaYcN",
+	"1PrkETsRcaP3VCnHxc4sErkHByerrRBIR",
+	"1GXxMelyXamep-Ypb79xenrBT_k2avDOY",
+	"1VHzqe-eopVihpwkByovOiO9ETyMC_76j",
+	"12AQDgBAV-Pm5On25Zn5GQYHwv6Lrl_IS",
+	"1B3w4DiZjlnobWrrEiYHCkClRQBzKro_X",
+	"1u6dN-xAnbB8ZHOHgS23c8fqLqHTi2KBI",
+	"1pK4pflyyIXXSLusUmktHftGWM1LE5WMX",
+	"1PgjpvHtezWRMDoPC4cZz1vqR-I7yU2pH",
+	"1MkHDbbXpRktmiHaZIbvCMVzlDQPQe_YI",
+	"1uBCwmsQnK0BqNyTnQKtc-uvLyI4sB4-l",
+	"1F6b498zrPiXLnPh5wngi64iVhiToM6su",
+	"1pHxh2UaJeXgRpS9oyT6DvKLVt1lY_TeL",
+	"1zILOH4TH6XFGe_ykwr537N-139XrotYE",
+	"184MiYeTsWfbwBTLq4RBKrXb-nffvN6NH",
+	"1GZF-Ndz2Fs6pPHpk8m0DcuU-m0bWnRp7",
+	"1t4eTdYGy42MDKK6T4iQ8t4klIlfxXzTF",
+	"1W3_yMBl6Cruh46bpLU-ZrXvTifzR4nK4",
+	"151whIZsfWA2rWIxRdHMyOm5ZeXUji56X",
+	"1gZiZB0awBtJ5wjaSZ4iDeO-0l9JboGZa",
+	"1zz1gifbOvd0hiw4l3rqRGDAE_SkfUTNN",
+	"1QFdUaC2MVCMpNQ6J6SO7FjdVwIA0NMkc",
+	"1FYvyVZbEPNyDdK0sYlLozLyB6TaC4_9u",
+	"11KWOKgMU4J338RYDsiWmK8_3SHUjX56-",
+	"1OQCQ5645xMEEJL9-dZwCclziSZHkyODQ",
+	"11FX78nkIVeRg8IZ_fWi7X9ee3KHho1Jq",
+	"1bH2QlG4rDinE7RSyxt1frfK3k1n55fCN",
+	"1--RKhGvEqqf7ZhIxKYICIGqROVvGaOKk",
+];
+
+const images = ids.map((id) => ({ original: `${baseUrl}?id=${id}&sz=w350` }));
 
 const General01 = () => {
 	return (
@@ -34,83 +103,99 @@ const General01 = () => {
 			</ReactAudioPlayer>
 			<Timeline>
 				<Card
-					title={"When we first met,"}
+					title={"this year was a lot..."}
 					img={
-						"https://drive.google.com/thumbnail?id=1QzlLMXI-ypKyQpLaDoz5LkZ98eFOdVLb&sz=w350"
+						"https://media0.giphy.com/media/3oKIPwoeGErMmaI43S/giphy.gif?cid=6c09b952da6sz08qly6mhht0bqibdsxtwbkrmfa7by9jsvlz&ep=v1_gifs_search&rid=giphy.gif&ct=g"
 					}
-					text={"I thought you were a chill guy."}
+					text={"you dodging all the curveballs this year..."}
 				/>
-				<BufferText text={"But then I realized..."} />
+				<BufferText text={"And now..."} />
 				<Card
-					title={"...you're really just a chill guy."}
-					img={
-						"https://drive.google.com/thumbnail?id=1zDpW2Mec35_gsHENvFEqOFfnINM3vLHu&sz=w350"
-					}
+					title={"you're a chill guy"}
+					img={"https://media.tenor.com/FetQ_KhWgd4AAAAM/chill-guy.gif"}
 					text={
-						"Who could have known that we would have so many hang outs this quarter and have such fun times together? I'm honestly so grateful that you invited me to as many things as you did and that we got to know each other better through ACM."
+						"yay! You made it to the end of the year :) I'm so proud of you 😌"
 					}
 				/>
-				<BufferText text={"And to that I say:"} />
+				<BufferText text={"So, with the year coming to an end:"} />
 				<Card
-					title={"🎉 Happy Belated Birthday, Victor 🎉"}
+					title={"MERRY CHRISTMAS WOOOOO 🎄🎄"}
 					img={
-						"https://drive.google.com/thumbnail?id=1IuVL_xnBJQEYXPnn69sgGuBQwLyJPrk3&sz=w350"
+						"https://cdn.discordapp.com/attachments/741182535442235494/918327566790701096/image1.gif?ex=676778b1&is=67662731&hm=11237a5e28cb0f647f9b73efebea91418b64216224033fd6ffad8c2c5df79c60&"
 					}
 					text={
-						"(yes this is the gift I said I was going to give you but couldn't get to you in time because I'm a busy bee, but don't worry, there's more !! [keep scrolling 😋])"
+						"from the Widjaja family to you! (and don't forget me too) MERRY CHRISTMAS WOOOOOO MY FAVORITE HOLIDAY LETS GOOOO"
 					}
 				/>
+				<motion.div
+					initial="offscreen"
+					whileInView="onscreen"
+					variants={CardVariants}
+					viewport={{ once: true, amount: 0.5 }}
+					className="personal-card"
+				>
+					<div className="card">
+						<h1 className="personal-card-title">thankful for you 🥺</h1>
+						<div
+							style={{
+								height: "622px",
+								placeContent: "center",
+								placeItems: "center",
+							}}
+						>
+							<ImageGallery
+								items={images}
+								showNav={true}
+								showFullscreenButton={true}
+								showPlayButton={false}
+								autoPlay={true}
+								showIndex={true}
+								slideInterval={1500}
+								slideDuration={0}
+							/>
+						</div>
+					</div>
+					<p className="personal-card-text">
+						to everyone that made this year special... as every year is in its
+						own way, thank you for being a part of it. Also these were the only
+						photos of the year that I could muster, but know that whether it was
+						a really deep talk that we had, a short dinner or interaction, I
+						have you in my memories. 🫡 (also sorry if the photos are blurry :3)
+					</p>
+				</motion.div>
 				<Card
-					title={"Parties & Hotpot!!"}
-					img={
-						"https://drive.google.com/thumbnail?id=1r_I3hFXop7V1uDUzjijvAWU0lNY5hX2n&sz=w350"
-					}
-					text={
-						"These moments were the most fun I've had in a single quarter. Hope you had tons of fun and got to celebrate your 22nd birthday to the fullest. "
-					}
-				/>
-				<Card
-					title={"On another note..."}
-					img={
-						"https://drive.google.com/thumbnail?id=1yKu5map-3lhKq0znWCZfiQ1XPXfGMOfW&sz=w350"
-					}
-					text={
-						"I thought poker was going to be the only thing we did together this quarter, but I'm glad we did more than that. I'm looking forward to being able to make more memories with you the rest of this year (even if I may be more busy), but I'm sure we'll find time to hang out, and even if we may drift apart someday, I'm sure we'll both understand that that's life, and that's okay. 😌"
-					}
+					title={"best wishes"}
+					img={"https://media.tenor.com/u9jAXVyIZV8AAAAM/anime-gojou.gif"}
+					text={"(keep scrolling)"}
 				/>
 				<BufferText text={"But wait! There's more..."} />
 				<Card
-					title={"ALSO MERRY CHRISTMAS WOOOOO 🎄🎄"}
+					title={"ALSO HAPPY EARLY NEW YEAR 🎉🎉"}
 					img={
-						"https://drive.google.com/thumbnail?id=1PBEnDfu7qm4ICih-u3Ky3UEu2Z1f7l_D&sz=w350"
+						"https://media.tenor.com/2uv5oIQG-QoAAAAM/sono-bisque-doll-wa-koi-wo-suru-fireworks.gif"
 					}
-					text={"May I join your uwu tree pwetty pwease? 👉👈🥺"}
+					text={"(i might be too lazy/forget/be too busy to message you)"}
 				/>
 				<Card
-					title={"And while we're still here"}
+					title={"Life's starting to move by faster"}
 					img={
-						"https://drive.google.com/thumbnail?id=1rvG09ajoCNazSjO04btmzYztq9CDSVvZ&sz=w350"
+						"https://media1.giphy.com/media/XIqCQx02E1U9W/200w.gif?cid=6c09b952cqog7669e7mfta0to6w427j82420c4w3odo0beth&ep=v1_gifs_search&rid=200w.gif&ct=g"
 					}
 					text={
-						"let's not waste a second of our time in our early adulthood and make the most of the moments."
-					}
-				/>
-				<BufferText text={"goofy ahh photos alert 🤡"} />
-				<Card
-					title={"putting in the work"}
-					img={
-						"https://drive.google.com/thumbnail?id=1G37EOnpBf25TGho8GDydv2oBvB0ANkcN&sz=w350"
-					}
-					text={
-						"had to get down and dirty to get those really nice shots of you 😏"
+						"so let's not waste a second of our time and make the most of the moments."
 					}
 				/>
 				<Card
-					title={"???"}
+					title={"me when i'm not with you"}
+					img={"https://media.tenor.com/P63Vv_xY2BAAAAAM/jerik29.gif"}
+					text={":("}
+				/>
+				<Card
+					title={"when when i when im whe when im with you"}
 					img={
-						"https://drive.google.com/thumbnail?id=1Gapjvsvrdws-1w8cIRPm_uCysNSlEzLG&sz=w350"
+						"https://media.tenor.com/ZPHHiCRxrlsAAAAj/happy-happy-happy-cat.gif"
 					}
-					text={"wtf is going on in this photo lul"}
+					text={":)"}
 				/>
 				<Card
 					title={"me when I don't have gift for you"}
@@ -119,12 +204,8 @@ const General01 = () => {
 				/>
 				<Card
 					title={"just kidding!"}
-					img={
-						"https://cdn.iconscout.com/icon/free/png-256/free-amazon-logo-icon-download-in-svg-png-gif-file-formats--brand-social-media-card-pack-logos-icons-1583154.png?f=webp"
-					}
-					text={
-						"Happy Birthday, Merry Christmas, and Happy New Year! haha :3 (it should be sent to you very shortly, but if it hasn't yet let me know)"
-					}
+					img={"https://media.tenor.com/PS6medrGxqwAAAAM/cat-kiss.gif"}
+					text={"here you go"}
 				/>
 			</Timeline>
 			<Button />

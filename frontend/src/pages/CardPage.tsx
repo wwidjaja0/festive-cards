@@ -86,7 +86,7 @@ function CardPage() {
 						{cardName === "bryce" && <BryceVillao01 />}
 						{cardName === "lisa" && <LisaLiu01 />}
 						{cardName === "christmas" && <General01 />}
-						{cardName === "christmass" && <Meme01 />}
+						{cardName === "christmass" && <General01 />}
 						<Credits fixed={true} />
 					</>
 				) : (
