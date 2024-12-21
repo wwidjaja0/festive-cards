@@ -30,6 +30,21 @@ a:hover {
 	color: #83c1ff;
 }
 
+button {
+	background: rgba(0, 0, 0, 0.2);
+	color: white;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border: none;
+	cursor: pointer;
+	border-radius: 1rem;
+	font-size: large;
+}
+
+button:hover {
+	background: rgba(0, 0, 0, 0.4);
+}
+
 :root {
 	background-color: var(--background-color, #000000);
 	color: rgba(255, 255, 255, 0.87);
@@ -62,7 +77,6 @@ a:hover {
 	margin: auto;
 
 	text-shadow: 1px 1px 10px #4d4d4d;
-	color-scheme: light dark;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 25px;
 
@@ -81,7 +95,6 @@ a:hover {
 	align-items: center;
 	margin: auto;
 	padding: 20rem 0;
-	background: rgba(0, 0, 0, 0.2);
 }
 
 .hero-buffer {
@@ -167,11 +180,6 @@ a:hover {
 	font-family: "DM Mono";
 }
 
-.socials {
-	padding-left: 2vh;
-	padding-right: 2vh;
-}
-
 .no-drag {
 	-webkit-user-drag: none;
 	user-select: none;
@@ -190,55 +198,4 @@ a:hover {
 	.personal-card {
 		width: 100%;
 	}
-}
-
-button {
-	border-radius: 8px;
-	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
-	font-size: 1em;
-	font-weight: 500;
-	font-family: inherit;
-	background-color: #1a1a1a;
-	cursor: pointer;
-	transition: border-color 0.25s;
-}
-button:hover {
-	border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-	outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
-}
-
-.flip-card {
-	perspective: 1000px;
-}
-
-.flip-card-inner {
-	transition: transform 0.6s;
-	transform-style: preserve-3d;
-}
-
-.flip-card-front,
-.flip-card-back {
-	position: absolute;
-	backface-visibility: hidden;
-}
-
-.flip-card-back {
-	transform: rotateY(180deg);
 }

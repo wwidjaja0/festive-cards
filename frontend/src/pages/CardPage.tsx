@@ -2,16 +2,28 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Snowfall from "react-snowfall";
 import { motion, useScroll, useSpring, useTransform } from "motion/react";
-import VictorKuCards from "../cards/VKu01";
-import AngelaTsaiCards from "../cards/ATsai01";
-import KylieLauCards from "../cards/KLau01";
 import Credits from "../components/Credits";
 import { useEffect } from "react";
+import BryceVillao01 from "../cards/BVillao01";
+import VictorKu01 from "../cards/VKu01";
+import AngelaTsai01 from "../cards/ATsai01";
+import KylieLau01 from "../cards/KLau01";
+import LisaLiu01 from "../cards/LLiu01";
+import General01 from "../cards/General01";
+import Meme01 from "../cards/Meme01";
 
 function CardPage() {
 	const { cardName } = useParams();
 	const useSnow = true;
-	const names = ["vicky", "angela", "pookie"];
+	const names = [
+		"vicky",
+		"angela",
+		"pookie",
+		"bryce",
+		"lisa",
+		"christmass",
+		"christmas",
+	];
 	const isValidCardName = names.includes(cardName || "");
 	if (!isValidCardName) {
 		document.documentElement.style.setProperty("--background-color", "#000000");
@@ -23,6 +35,10 @@ function CardPage() {
 		vicky: ["#384B70", "#507687", "#B8001F"],
 		angela: ["#5CB338", "#FFC145", "#FB4141"],
 		pookie: ["#3C552D", "#CA7373", "#D7B26D"],
+		bryce: ["#384B70", "#507687", "#B8001F"],
+		lisa: ["#5CB338", "#FFC145", "#FB4141"],
+		christmas: ["#3C552D", "#CA7373", "#D7B26D"],
+		christmass: ["#3C552D", "#CA7373", "#D7B26D"],
 	};
 
 	// Get the current color based on the cardName
@@ -64,9 +80,13 @@ function CardPage() {
 			<div>
 				{isValidCardName ? (
 					<>
-						{cardName === "vicky" && <VictorKuCards />}
-						{cardName === "angela" && <AngelaTsaiCards />}
-						{cardName === "pookie" && <KylieLauCards />}
+						{cardName === "vicky" && <VictorKu01 />}
+						{cardName === "angela" && <AngelaTsai01 />}
+						{cardName === "pookie" && <KylieLau01 />}
+						{cardName === "bryce" && <BryceVillao01 />}
+						{cardName === "lisa" && <LisaLiu01 />}
+						{cardName === "christmas" && <General01 />}
+						{cardName === "christmass" && <Meme01 />}
 						<Credits fixed={true} />
 					</>
 				) : (

@@ -4,6 +4,8 @@ import HeroText from "../components/HeroText";
 import Timeline from "../components/Timeline";
 import { motion } from "motion/react";
 import MetaTags from "../components/MetaTags";
+import ReactAudioPlayer from "react-audio-player";
+import Button from "../components/Button";
 
 const AngelaTsai01 = () => {
 	return (
@@ -24,8 +26,12 @@ const AngelaTsai01 = () => {
 				transition={{ delay: 5 }}
 				className="dm-sans hero-buffer"
 			>
-				Hint: scroll down :3
+				Hint: scroll down :3 (also best experienced on desktop)
 			</motion.p>
+			<ReactAudioPlayer autoPlay controls loop volume={0.3}>
+				<source src="./its-beginning.mp3" type="audio/mp3" />
+				Audio is not supported on this browser.
+			</ReactAudioPlayer>
 			<Timeline>
 				<Card
 					title={"When we first met,"}
@@ -78,28 +84,52 @@ const AngelaTsai01 = () => {
 					img={
 						"https://drive.google.com/thumbnail?id=1PBEnDfu7qm4ICih-u3Ky3UEu2Z1f7l_D&sz=w350"
 					}
-					text={""}
+					text={"May I join your uwu tree pwetty pwease? 👉👈🥺"}
 				/>
 				<Card
-					title={"And while we're still here..."}
+					title={"And while we're still here"}
 					img={
 						"https://drive.google.com/thumbnail?id=1rvG09ajoCNazSjO04btmzYztq9CDSVvZ&sz=w350"
 					}
 					text={
-						"Let's not waste a second of our time in our early adulthood and make the most of it."
+						"let's not waste a second of our time in our early adulthood and make the most of the moments."
+					}
+				/>
+				<BufferText text={"goofy ahh photos alert 🤡"} />
+				<Card
+					title={"putting in the work"}
+					img={
+						"https://drive.google.com/thumbnail?id=1G37EOnpBf25TGho8GDydv2oBvB0ANkcN&sz=w350"
+					}
+					text={
+						"had to get down and dirty to get those really nice shots of you 😏"
 					}
 				/>
 				<Card
-					title={"Finally, a gift for you..."}
+					title={"???"}
+					img={
+						"https://drive.google.com/thumbnail?id=1Gapjvsvrdws-1w8cIRPm_uCysNSlEzLG&sz=w350"
+					}
+					text={"wtf is going on in this photo lul"}
+				/>
+				<Card
+					title={"me when I don't have gift for you"}
+					img={"https://cdn3.emoji.gg/emojis/7912-ant-meme.png"}
+					text={"erm"}
+				/>
+				<Card
+					title={"just kidding!"}
 					img={
 						"https://cdn.iconscout.com/icon/free/png-256/free-amazon-logo-icon-download-in-svg-png-gif-file-formats--brand-social-media-card-pack-logos-icons-1583154.png?f=webp"
 					}
 					text={
-						"Happy Birthday, Merry Christmas, and Happy New Year! - Widjaja"
+						"Happy Birthday, Merry Christmas, and Happy New Year! haha :3 (it should be sent to you very shortly, but if it hasn't yet let me know)"
 					}
 				/>
 			</Timeline>
+			<Button />
 		</div>
 	);
 };
+
 export default AngelaTsai01;
