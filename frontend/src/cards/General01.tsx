@@ -120,11 +120,9 @@ const General01 = () => {
 				<BufferText text={"So, with the year coming to an end:"} />
 				<Card
 					title={"MERRY CHRISTMAS WOOOOO 🎄🎄"}
-					img={
-						"https://cdn.discordapp.com/attachments/741182535442235494/918327566790701096/image1.gif?ex=676778b1&is=67662731&hm=11237a5e28cb0f647f9b73efebea91418b64216224033fd6ffad8c2c5df79c60&"
-					}
+					img={"/me.gif"}
 					text={
-						"from the Widjaja family to you! (and don't forget me too) MERRY CHRISTMAS WOOOOOO MY FAVORITE HOLIDAY LETS GOOOO"
+						"from the Widjaja family to you! CHRISTMAS WOOOOOO MY FAVORITE HOLIDAY LETS GOOOO"
 					}
 				/>
 				<motion.div
@@ -174,16 +172,14 @@ const General01 = () => {
 					img={
 						"https://media.tenor.com/2uv5oIQG-QoAAAAM/sono-bisque-doll-wa-koi-wo-suru-fireworks.gif"
 					}
-					text={"(i might be too lazy/forget/be too busy to message you)"}
+					text={"AYAYAYAYAYAAYAYAYAYAYAYAAYYA"}
 				/>
 				<Card
-					title={"Life's starting to move by faster"}
+					title={"Life moves fast"}
 					img={
 						"https://media1.giphy.com/media/XIqCQx02E1U9W/200w.gif?cid=6c09b952cqog7669e7mfta0to6w427j82420c4w3odo0beth&ep=v1_gifs_search&rid=200w.gif&ct=g"
 					}
-					text={
-						"so let's not waste a second of our time and make the most of the moments."
-					}
+					text={"so move faster lol."}
 				/>
 				<Card
 					title={"me when i'm not with you"}
