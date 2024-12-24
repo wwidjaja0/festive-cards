@@ -11,6 +11,7 @@ import KylieLau01 from "../cards/KLau01";
 import LisaLiu01 from "../cards/LLiu01";
 import General01 from "../cards/General01";
 // import Meme01 from "../cards/Meme01";
+import KParents01 from "../cards/KParents01";
 
 function CardPage() {
 	const { cardName } = useParams();
@@ -23,6 +24,7 @@ function CardPage() {
 		"lisa",
 		"christmass",
 		"christmas",
+		"mrandmrslau",
 	];
 	const isValidCardName = names.includes(cardName || "");
 	if (!isValidCardName) {
@@ -39,6 +41,7 @@ function CardPage() {
 		lisa: ["#5CB338", "#FFC145", "#FB4141"],
 		christmas: ["#3C552D", "#CA7373", "#D7B26D"],
 		christmass: ["#3C552D", "#CA7373", "#D7B26D"],
+		mrandmrslau: ["#3C552D", "#CA7373", "#D7B26D"],
 	};
 
 	// Get the current color based on the cardName
@@ -87,6 +90,7 @@ function CardPage() {
 						{cardName === "lisa" && <LisaLiu01 />}
 						{cardName === "christmas" && <General01 />}
 						{cardName === "christmass" && <General01 />}
+						{cardName === "mrandmrslau" && <KParents01 />}
 						<Credits fixed={true} />
 					</>
 				) : (
